@@ -1,0 +1,65 @@
+object SaveForm: TSaveForm
+  Left = 1115
+  Height = 240
+  Top = 186
+  Width = 400
+  BorderStyle = bsSingle
+  Caption = 'Сохранение'
+  ClientHeight = 240
+  ClientWidth = 400
+  DesignTimePPI = 120
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object EditUnit4: TEdit
+    Left = 72
+    Height = 34
+    Top = 72
+    Width = 256
+    Alignment = taCenter
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    MaxLength = 30
+    OnChange = EditUnit4Change
+    ParentFont = False
+    TabOrder = 0
+    TextHint = 'Введите название файла'
+  end
+  object AcceptButton: TButton
+    Left = 40
+    Height = 47
+    Top = 144
+    Width = 126
+    Caption = 'Подтвердить'
+    Enabled = False
+    OnClick = AcceptButtonClick
+    TabOrder = 1
+  end
+  object CancelButtonUnit4: TButton
+    Left = 224
+    Height = 47
+    Top = 144
+    Width = 126
+    Caption = 'Отмена'
+    OnClick = CancelButtonUnit4Click
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 56
+    Height = 19
+    Top = 8
+    Width = 291
+    Alignment = taCenter
+    Caption = 'Файл будет сохранён в папку с проектом!'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end

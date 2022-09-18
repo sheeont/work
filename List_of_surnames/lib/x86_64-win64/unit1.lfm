@@ -1,0 +1,163 @@
+object MainForm: TMainForm
+  Left = 575
+  Height = 749
+  Top = 172
+  Width = 500
+  BorderStyle = bsSingle
+  Caption = 'Список фамилий'
+  ClientHeight = 724
+  ClientWidth = 500
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object AddButton: TButton
+    Left = 32
+    Height = 40
+    Top = 648
+    Width = 112
+    Caption = 'Добавить'
+    OnClick = AddButtonClick
+    TabOrder = 0
+  end
+  object EditButton: TButton
+    Left = 200
+    Height = 40
+    Top = 648
+    Width = 112
+    Caption = 'Редактировать'
+    OnClick = EditButtonClick
+    TabOrder = 1
+  end
+  object DeleteButton: TButton
+    Left = 360
+    Height = 40
+    Top = 648
+    Width = 112
+    Caption = 'Удалить'
+    OnClick = DeleteButtonClick
+    TabOrder = 2
+  end
+  object SurnamesList: TListBox
+    Left = 32
+    Height = 536
+    Top = 80
+    Width = 440
+    Columns = 2
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Items.Strings = (
+      'Смышляев'
+      'Николаев'
+      'Смоленцев'
+      'Шутов'
+      'Алексеев'
+      'Комараевцев'
+      'Иванов'
+      'Петуханов'
+      'Кравцов'
+      'Капустин'
+      'Авдеев'
+      'Зыков'
+      'Бирюков'
+      'Шарапов'
+      'Никонов'
+      'Щукин'
+      'Кожухов'
+      'Соколова'
+      'Романова'
+      'Гаращенко'
+      'Гордеев'
+      'Самойлов'
+      'Шашков'
+      'Беспалов'
+      'Мишустин'
+      'Рожков'
+      'Белозёров'
+      'Доронин'
+      'Бобылёв'
+      'Сазонов'
+      'Одинцов'
+      'Смышляев'
+      'Николаев'
+      'Смоленцев'
+      'Шутов'
+      'Алексеев'
+      'Комараевцев'
+      'Иванов'
+      'Петуханов'
+      'Кравцов'
+      'Капустин'
+      'Авдеев'
+      'Зыков'
+      'Бирюков'
+      'Шарапов'
+      'Никонов'
+      'Щукин'
+      'Кожухов'
+      'Соколова'
+      'Романова'
+      'Гаращенко'
+      'Гордеев'
+      'Самойлов'
+      'Шашков'
+      'Беспалов'
+      'Мишустин'
+      'Рожков'
+      'Белозёров'
+      'Доронин'
+      'Бобылёв'
+      'Сазонов'
+      'Одинцов'
+    )
+    ItemHeight = 22
+    ItemIndex = 0
+    MultiSelect = True
+    OnClick = SurnamesListClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object ListBoxHeader: TLabel
+    Left = 168
+    Height = 26
+    Top = 24
+    Width = 174
+    Alignment = taCenter
+    Caption = 'Список фамилий'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object MainMenu1: TMainMenu
+    object FileSettings: TMenuItem
+      Caption = 'Файл'
+      object Save: TMenuItem
+        Caption = 'Сохранить в файл'
+        OnClick = SaveClick
+      end
+      object Load: TMenuItem
+        Caption = 'Загрузить из файла'
+        OnClick = LoadClick
+      end
+      object ExitMenu: TMenuItem
+        Caption = 'Выход'
+        OnClick = ExitMenuClick
+      end
+    end
+    object Additional: TMenuItem
+      Caption = 'Дополнительно'
+      object ClearList: TMenuItem
+        Caption = 'Очистить список'
+        OnClick = ClearListClick
+      end
+    end
+  end
+end

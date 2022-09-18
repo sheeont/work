@@ -1,0 +1,50 @@
+object EditForm: TEditForm
+  Left = 1127
+  Height = 240
+  Top = 177
+  Width = 400
+  BorderStyle = bsSingle
+  Caption = 'Редактирование фамилии'
+  ClientHeight = 240
+  ClientWidth = 400
+  DesignTimePPI = 120
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object EditUnit3: TEdit
+    Left = 64
+    Height = 34
+    Top = 56
+    Width = 264
+    Alignment = taCenter
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    OnChange = EditUnit3Change
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    TextHint = 'Введите новую фамилию'
+  end
+  object AcceptButton: TButton
+    Left = 40
+    Height = 48
+    Top = 136
+    Width = 112
+    Caption = 'Подтвердить'
+    OnClick = AcceptButtonClick
+    TabOrder = 1
+  end
+  object CancelButton: TButton
+    Left = 240
+    Height = 48
+    Top = 136
+    Width = 112
+    Caption = 'Отмена'
+    OnClick = CancelButtonClick
+    TabOrder = 2
+  end
+end

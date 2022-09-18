@@ -1,0 +1,55 @@
+object FileFormatForm: TFileFormatForm
+  Left = 963
+  Height = 240
+  Top = 269
+  Width = 400
+  BorderStyle = bsSingle
+  Caption = 'Формат файлов'
+  ClientHeight = 0
+  ClientWidth = 0
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object LabelFormatForm: TLabel
+    Left = 38
+    Height = 21
+    Top = 32
+    Width = 324
+    Caption = 'Введите формат файлов(.txt, .doc и т.д.):'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object EditFormatForm: TEdit
+    Left = 122
+    Height = 29
+    Top = 96
+    Width = 156
+    Alignment = taCenter
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    OnChange = EditFormatFormChange
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    TextHint = 'Введите формат'
+  end
+  object AcceptButton: TButton
+    Left = 150
+    Height = 49
+    Top = 160
+    Width = 101
+    Caption = 'Завершить'
+    Enabled = False
+    OnClick = AcceptButtonClick
+    TabOrder = 1
+  end
+end

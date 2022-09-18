@@ -1,0 +1,50 @@
+object AddForm: TAddForm
+  Left = 837
+  Height = 240
+  Top = 328
+  Width = 400
+  BorderStyle = bsSingle
+  Caption = 'Добавление фамилии'
+  ClientHeight = 240
+  ClientWidth = 400
+  DesignTimePPI = 120
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object AddButtonUnit2: TButton
+    Left = 40
+    Height = 47
+    Top = 136
+    Width = 126
+    Caption = 'Добавить'
+    Enabled = False
+    OnClick = AddButtonUnit2Click
+    TabOrder = 0
+  end
+  object EditUnit2: TEdit
+    Left = 72
+    Height = 34
+    Top = 56
+    Width = 256
+    Alignment = taCenter
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    MaxLength = 30
+    OnChange = EditUnit2Change
+    ParentFont = False
+    TabOrder = 1
+    TextHint = 'Введите новую фамилию'
+  end
+  object CancelButtonUnit2: TButton
+    Left = 224
+    Height = 47
+    Top = 136
+    Width = 126
+    Caption = 'Отмена'
+    OnClick = CancelButtonUnit2Click
+    TabOrder = 2
+  end
+end

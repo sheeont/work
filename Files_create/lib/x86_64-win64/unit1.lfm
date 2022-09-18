@@ -1,0 +1,56 @@
+object MainForm: TMainForm
+  Left = 459
+  Height = 240
+  Top = 274
+  Width = 480
+  BorderStyle = bsSingle
+  Caption = 'Создание файлов'
+  ClientHeight = 240
+  ClientWidth = 480
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object LabelMainForm: TLabel
+    Left = 11
+    Height = 21
+    Top = 32
+    Width = 459
+    Caption = 'Введите количество файлов, которые Вы хотите создать:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object EditMainForm: TEdit
+    Left = 172
+    Height = 29
+    Top = 96
+    Width = 137
+    Alignment = taCenter
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    NumbersOnly = True
+    OnChange = EditMainFormChange
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    TextHint = 'Введите число'
+  end
+  object GoToNextButton: TButton
+    Left = 190
+    Height = 49
+    Top = 160
+    Width = 101
+    Caption = 'Продолжить'
+    Enabled = False
+    OnClick = GoToNextButtonClick
+    TabOrder = 1
+  end
+end
